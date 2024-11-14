@@ -1,20 +1,29 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
-import Body from './Components/Body'
-import EventPart from './Components/EventPart'
-import Footer from './Components/Footer'
+
 import { Route, Routes } from 'react-router-dom'
+import Event from './Components/Event'
+import Home from './Components/Home'
+import Register from './Components/Register'
 
 
 
 const App = () => {
   return (
-    <div className='w-full  bg-white-900 text-black'>
+    <div className=''>
+     
+      <Routes>
+      {/* <Route path="/navbar" element={<Navbar />}/>
+      <Route path="/body" element={<Body />}/>
+      <Route path="/eventPart" element={<EventPart />}/>
+      <Route path="/footer" element={<Footer />}/> */}
+      <Route path = '/' element={<Home/>}/>
+
       
-        <Navbar />
-      <Body/>
-      <EventPart/>
-      <Footer/>
+      <Route path="/event" element={<Event/>}/>
+      <Route path ="/register" element={<Register/>}/>
+      </Routes>
+      
+      
         
       
     </div>

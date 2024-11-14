@@ -31,7 +31,7 @@ const Navbar = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             variants={dropFromTop}
           >
-            <Link className="text-xl font-medium text-blue-500 hover:underline">Home</Link>
+            <Link className="text-xl font-medium text-blue-500 ">Home</Link>
           </motion.div>
 
           <motion.div
@@ -40,7 +40,7 @@ const Navbar = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             variants={dropFromTop}
           >
-            <Link to={"/event"} className="text-xl font-medium hover:underline">Event</Link>
+            <Link to={"/event"} className="text-xl font-medium ">Event</Link>
           </motion.div>
 
           <motion.div
@@ -49,7 +49,7 @@ const Navbar = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
             variants={dropFromTop}
           >
-            <Link className="text-xl font-medium hover:underline">Register</Link>
+            <Link to={"/register"} className="text-xl font-medium ">Register</Link>
           </motion.div>
         </div>
       </div>
